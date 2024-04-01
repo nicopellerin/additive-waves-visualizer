@@ -1,11 +1,18 @@
-import AdditiveWavesViz from "@/components";
+import Head from "next/head";
 import styled from "styled-components";
+
+import AdditiveWavesViz from "@/components";
 
 export default function Index() {
   return (
-    <Wrapper>
-      <AdditiveWavesViz />
-    </Wrapper>
+    <>
+      <Head>
+        <title>Additive Waves</title>
+      </Head>
+      <Wrapper>
+        <AdditiveWavesViz />
+      </Wrapper>
+    </>
   );
 }
 
